@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+      "dev": "tailwindcss -i src/static/src/tailwind.css -o src/static/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
