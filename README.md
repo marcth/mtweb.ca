@@ -11,6 +11,11 @@ mkdir -p ~/Python && cd ~/Python
 git clone git@github.com:marcth/mtweb.ca.git
 
 cd mtweb.ca
+```
+---
+**Note**: Make sure the terminal is not an activated Python virtual environment. If so issue the command `deactivate`.
+
+---
 
 python -m venv venv
 
