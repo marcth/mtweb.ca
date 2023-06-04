@@ -294,8 +294,33 @@ module.exports = {
 ```
 
 
-Finally, in `./src/templates/layout.html` add the following line within the `<head>` tag:
+In `./src/templates/layout.html` add the following line within the `<head>` tag:
 ```
 ...
     {% include 'head/css.html' %}
 </head>
+...
+```
+---
+**EXTRAS**
+
+```
+npm install -D @tailwindcss/forms
+npm install -D @tailwindcss/typography
+
+npm install --save-dev tailwindcss-font-inter
+```
+Add the following to `tailwind.config.js`
+
+```
+module.exports = {
+...
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+...
+  ],
+}
+```
+
+---
