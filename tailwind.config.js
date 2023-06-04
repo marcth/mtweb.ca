@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}"
+  ],
   theme: {
-    extend: {},
+    // Some useful comment
+    extend: {
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif']
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ],
 
+}
